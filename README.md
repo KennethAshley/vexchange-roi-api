@@ -1,3 +1,4 @@
-# Crypto ROI API
+# Vexchange ROI
 
-Express API to get info related to vexchange tokens
+npm install
+npm run start
