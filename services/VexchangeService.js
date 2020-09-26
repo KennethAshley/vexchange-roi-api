@@ -85,7 +85,7 @@ const VexchangeService = {
     let ethPurchaseABI = _.find(VEXCHANGE_CONTRACT.abi, { name: 'EthPurchase' });
     let tokenPurchaseABI = _.find(VEXCHANGE_CONTRACT.abi, { name: 'TokenPurchase' });
 
-    let { data: events } = await axios.post(`http://localhost:8669/logs/event`, {
+    let { data: events } = await axios.post(`${NODE_URL}logs/event`, {
       range: { unit: 'block', from: 1775000, to: CURRENT_BLOCK },
       criteriaSet: [
         {
